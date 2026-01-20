@@ -156,6 +156,11 @@
         border-radius: 1.25rem;
       }
 
+      .shadow-card {
+        box-shadow: 0 calc(25 * var(--unit)) calc(25 * var(--unit)) 0
+          rgb(0 0 0 / 0.05);
+      }
+
       .bg-slate-300 {
         background-color: var(--clr-slate-300);
       }
@@ -227,7 +232,9 @@
   </head>
   <body class="w-full h-screen flex flex-col item-center bg-slate-300">
     <main class="container flex flex-col flex-wrap item-center w-full h-full">
-      <div class="cardw w-min h-min px-4 pt-4 pb-10 rounded-2xl bg-white">
+      <div
+        class="card shadow-card w-min h-min px-4 pt-4 pb-10 rounded-2xl bg-white"
+      >
         <img
           class="block w-72 object-cover rounded-xl mb-6"
           src="images/image-qr-code.png"
