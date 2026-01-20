@@ -211,7 +211,9 @@
 
       .text-preset-1 {
         font-size: calc(22 * var(--unit));
-        /* line-heihgt: 1.2, 与设计稿在 height 存在 .8px 的误差 */
+        /* There is a 0.8px difference in height compared to the design draft */
+        /* line-heihgt: 1.2; */
+        /* Best solution */
         line-height: 1.182;
       }
 
@@ -241,7 +243,6 @@
           alt="qr code"
         />
         <div class="px-4">
-          <!-- line-height: 1.2 与设计稿在 height 存在 .8px 的误差; 所以 line-height 设置为 1.182-->
           <p
             class="text-slate-900 font-sans font-bold text-preset-1 text-center mb-4 tracking-normal"
           >
